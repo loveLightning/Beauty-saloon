@@ -1,1 +1,1 @@
-# Beauty-saloon
+# beauty
