@@ -27,6 +27,12 @@ const treatmentDesc = document.querySelectorAll('.treatment__desc');
 const status = document.querySelector('.status');
 const statusClose = document.querySelector('.status__close');
 
+const headerLoader = document.querySelector('.header__loader')
+
+window.onload = () => {
+  headerLoader.style.display = 'none';
+}
+
 // Слайдер 1
 let swiper = new Swiper(slider, {
     navigation: {
@@ -36,6 +42,7 @@ let swiper = new Swiper(slider, {
     slidesPerView: 'auto',
     speed: 1000,
     autoplay: {
+        delay: 8000,
         enabled: true,
         elay: 1,
     },
