@@ -141,7 +141,7 @@
                     <div class="face__wrapper">
                         <div data-aos="fade-left" class="face__desc-wrapper">
                             <p class="face__desc">
-                                <span class="face__desc-one">Tap on which face parts you’d like to consult on.</span><span class="face__desc-two">Нажмите на части лица, по которым вы хотите проконсультироваться.</span><span class="face__desc-span"> </span>
+                                <span class="face__desc-one">Нажмите на части лица, если хотите проконсультироваться.</span><span class="face__desc-two">Нажмите на части лица, по которым вы хотите проконсультироваться.</span><span class="face__desc-span"> </span>
                             </p>
                         </div>
                     </div>
@@ -318,7 +318,7 @@
                 <div class="swiper-button-prev"></div>
             </div>
             <div class="reviews__more">
-                <a class="reviews__more-link" href="#">View more testimonials</a>
+                <a class="reviews__more-link" href="#">Больше отзывов</a>
                 <a class="reviews__more-arrow" href="#"><img src="img/arrow-more.svg" alt="arrow"></a>
             </div>
        
@@ -401,17 +401,7 @@
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" ></script> 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        let tl = gsap.timeline();
-        tl.from('body', {opacity: 0, duration: .3})
-          .from('.swiper', {opacity: 0, duration: .3})
-          .from('.logo', {duration: .3, x: -300, opacity: 0})
-          .from('.header__item', {opacity: 0, duration: .3, x: -300})
-          .from('.header__button', {opacity: 0, duration: .3})
-          .from('.swiper__title-inner', {duration: .3, y: 300, opacity: 0})
-          .from('.swiper__btn-inner', {duration: .3, opacity: 0, y: 300})
-          .from('.swiper__social', {duration: .3, opacity: 0, y: 300})
-          .from('.swiper-button-next', {duration: .3, opacity: 0, y: 300})
-          .from('.swiper-button-prev', {duration: .3, opacity: 0, y: 300}, '-=0.3')
+        
         AOS.init({
             once: true,
             duration: 1000,

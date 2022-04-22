@@ -31,6 +31,17 @@ const headerLoader = document.querySelector('.header__loader')
 
 window.onload = () => {
   headerLoader.style.display = 'none';
+  let tl = gsap.timeline();
+        tl.from('body', {opacity: 0, duration: .3})
+          .from('.swiper', {opacity: 0, duration: .3})
+          .from('.logo', {duration: .3, x: -300, opacity: 0})
+          .from('.header__item', {opacity: 0, duration: .3, x: -300})
+          .from('.header__button', {opacity: 0, duration: .3})
+          .from('.swiper__title-inner', {duration: .3, y: 300, opacity: 0})
+          .from('.swiper__btn-inner', {duration: .3, opacity: 0, y: 300})
+          .from('.swiper__social', {duration: .3, opacity: 0, y: 300})
+          .from('.swiper-button-next', {duration: .3, opacity: 0, y: 300})
+          .from('.swiper-button-prev', {duration: .3, opacity: 0, y: 300}, '-=0.3')
 }
 
 // Слайдер 1
